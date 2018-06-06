@@ -31,11 +31,12 @@ angular.module('spBlogger.posts.services',[]).factory('postService', function(){
         author: 'Sandeep',
         datePublished: '2012-07-04'
         }],
-        getAll: function(){
+        getAllPosts: function(){
             return this.posts;
         },
         getPostById: function(id){
-            let obj = posts.find(o => o.id == id);
+            let obj = this.posts.find(o => o.id == id);
+            return obj;
         }
     }
        

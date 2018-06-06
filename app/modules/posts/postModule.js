@@ -1,9 +1,9 @@
 'use strict'
 
-angular.module('spBlogger.posts',['spBlogger.posts.controllers','spBlogger.posts.directives','spBlogger.posts.services','spBlogger.posts.filters']);
+angular.module('spBlogger.posts',['spBlogger.posts.controllers','spBlogger.posts.directives','spBlogger.posts.services','spBlogger.posts.filters','ui.router']);
 
 angular.module('spBlogger.posts').config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider){
-    console.log("States");
+    //console.log("States");
     $stateProvider.state('allPosts',{
         url: "/posts",
         templateUrl: "modules/posts/views/posts.html",
